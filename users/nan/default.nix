@@ -3,6 +3,8 @@
   age.secrets = {
     github.file = "${self}/secrets/github.age";
     github.owner = "nan";
+    nan.file = "${self}/secrets/github.age";
+    nan.owner = "nan";
   };
 
   home-manager.users.nan = { suites, ... }: {
@@ -10,14 +12,6 @@
     programs.git = {
       userName = "Fernando Chu";
       userEmail = "fernandochu97@gmail.com";
-      #signing = {
-      #  key = "8985725DB5B0C122";
-      #  signByDefault = true;
-      #};
-      #includes = [{
-      #  condition = "gitdir:~/work/";
-      #  path = ./work.inc;
-      #}];
     };
 
     programs.ssh = {
@@ -36,7 +30,7 @@
 
   users.users.nan = {
     uid = 1000;
-    password = "";
+    passwordFile = config.age.secrets.github.path;
     description = "default";
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.

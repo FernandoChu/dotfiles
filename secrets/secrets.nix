@@ -6,4 +6,5 @@ let
 in
 {
   "github.age".publicKeys = allKeys;
+  "nan.age".publicKeys = allKeys;
 }
