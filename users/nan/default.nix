@@ -3,7 +3,7 @@
   age.secrets = {
     github.file = "${self}/secrets/github.age";
     github.owner = "nan";
-    nan.file = "${self}/secrets/github.age";
+    nan.file = "${self}/secrets/nan.age";
     nan.owner = "nan";
   };
 
