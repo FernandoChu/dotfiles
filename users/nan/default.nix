@@ -30,7 +30,7 @@
 
   users.users.nan = {
     uid = 1000;
-    passwordFile = config.age.secrets.github.path;
+    passwordFile = config.age.secrets.nan.path;
     description = "default";
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
