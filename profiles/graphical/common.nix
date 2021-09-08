@@ -92,6 +92,9 @@ in
     ];
   };
 
+  location.provider = "geoclue2";
+  services.redshift.enable = true;
+
   services.xbanish.enable = true;
 
   # services.gnome.gnome-keyring.enable = true;
