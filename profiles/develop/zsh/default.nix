@@ -45,7 +45,6 @@ in
           "${zsh-you-should-use}/share/zsh/plugins/you-should-use/you-should-use.plugin.zsh"
           "${zsh-syntax-highlighting}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
           "${zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
-
         ];
 
         source = map (source: "source ${source}") sources;
