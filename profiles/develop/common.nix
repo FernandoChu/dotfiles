@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  # imports = [ ./zsh ./kakoune ./tmux ];
+  imports = [ ./zsh ];
 
   environment.shellAliases = {
     vi = "nvim";

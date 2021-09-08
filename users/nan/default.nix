@@ -31,7 +31,7 @@
   users.users.nan = {
     uid = 1000;
     passwordFile = "/run/secrets/nan";
-    description = "defaulto";
+    description = "NaN";
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
   };
