@@ -4,6 +4,8 @@
 
   environment.etc = {
     "i3/language.sh".source = ./language.sh;
+    "i3/background.png".source = ./background.png;
+    "i3/background2.png".source = ./background2.png;
   };
 
   services.xserver = {
@@ -22,10 +24,8 @@
       package = pkgs.i3-gaps;
       enable = true;
       extraPackages = with pkgs; [
-        dmenu #application launcher most people use
         i3status # gives you the default i3 status bar
         i3lock #default i3 screen locker
-        i3blocks #if you are planning on using i3blocks over i3status
       ];
     };
   };

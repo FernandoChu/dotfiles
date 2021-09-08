@@ -4,7 +4,7 @@
   imports = [ ./hardware-configuration.nix ] ++ suites.base ++ suites.graphics;
 
   nix = {
-    trustedUsers = [ "root" "fernando" ];
+    trustedUsers = [ "root" ];
     package = pkgs.nixUnstable;
     extraOptions = ''
       experimental-features = nix-command flakes
@@ -42,8 +42,8 @@
   # };
 
   # Configure keymap in X11
-  # services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
+  services.xserver.layout = "us";
+  services.xserver.xkbOptions = "caps:swapescape";
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -61,7 +61,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    xorg.xbacklight
     pamixer
   ];
 }

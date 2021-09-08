@@ -15,13 +15,6 @@ in
   #  pulse.enable = true;
   #};
 
-  #boot = {
-  #  tmpOnTmpfs = true;
-  #
-  #  kernel.sysctl."kernel.sysrq" = 1;
-  #
-  #};
-
   environment = {
 
     #etc = {
@@ -64,7 +57,7 @@ in
       ferdi
       #dzen2
       fantasque-sans-mono
-      #feh
+      feh
       #ffmpeg-full
       #gnome3.adwaita-icon-theme
       #gnome3.networkmanagerapplet
@@ -87,7 +80,6 @@ in
       dmenu
       polybar
       networkmanager_dmenu
-      #alacritty
       #volnoti
     ];
   };
