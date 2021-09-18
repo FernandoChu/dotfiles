@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  imports = [ ./zsh ];
+  imports = [ ./vscodium ./zsh ];
 
   environment.shellAliases = {
     vi = "nvim";
