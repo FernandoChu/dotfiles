@@ -32,7 +32,6 @@ in
       usbutils
       utillinux
       whois
-      vscodium
     ];
 
     shellInit = ''
