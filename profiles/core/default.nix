@@ -9,7 +9,6 @@ in
   environment = {
 
     systemPackages = with pkgs; [
-      alacritty
       binutils
       coreutils
       curl
@@ -21,7 +20,6 @@ in
       gptfdisk
       iputils
       jq
-      kitty
       manix
       moreutils
       nix-index
@@ -32,6 +30,7 @@ in
       usbutils
       utillinux
       whois
+      numlockx
     ];
 
     shellInit = ''

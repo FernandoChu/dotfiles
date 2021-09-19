@@ -53,7 +53,6 @@ in
       brave
       discord
       dolphin
-      dunst
       ferdi
       #dzen2
       fantasque-sans-mono
@@ -86,16 +85,12 @@ in
 
   location.provider = "geoclue2";
   services.redshift.enable = true;
-
   services.xbanish.enable = true;
 
   # services.gnome.gnome-keyring.enable = true;
 
   services.xserver = {
     enable = true;
-
-    # libinput.enable = true;
-
     displayManager.lightdm = {
       enable = true;
     };

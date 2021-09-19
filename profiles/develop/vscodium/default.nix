@@ -2,7 +2,7 @@
 let
   extensions = (with pkgs.vscode-extensions; [
     bbenoist.Nix
-    vscode-extensions.vscodevim.vim
+    vscodevim.vim
   ]);
   vscode-with-extensions = pkgs.vscode-with-extensions.override {
     vscode = pkgs.vscodium;
