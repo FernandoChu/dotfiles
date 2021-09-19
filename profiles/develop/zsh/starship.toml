@@ -1,6 +1,3 @@
-[aws]
-symbol = " "
-
 [character]
 success_symbol = "[❯](bold purple)"
 vicmd_symbol = "[❮](bold purple)"
@@ -16,15 +13,6 @@ symbol = " "
 [directory]
 style = "cyan"
 read_only = " 🔒"
-
-[docker]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
 
 [git_branch]
 format = "[$symbol$branch]($style) "
@@ -45,27 +33,9 @@ renamed = "⇆ "
 deleted = "✘ "
 style = "bold bright-white"
 
-[golang]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
 [memory_usage]
 symbol = " "
 disabled = false
-
-[nim]
-symbol = " "
 
 [nix_shell]
 format = '[$symbol$state]($style) '
@@ -79,14 +49,8 @@ symbol = " "
 [package]
 symbol = " "
 
-[php]
-symbol = " "
-
 [python]
 symbol = " "
-
-[ruby]
-symbol = " "
 
 [rust]
 symbol = " "

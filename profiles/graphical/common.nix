@@ -64,7 +64,6 @@ in
       #gnome-themes-extra
       #imagemagick
       #imlib2
-      kitty
       #librsvg
       #libsForQt5.qtstyleplugins
       libnotify
