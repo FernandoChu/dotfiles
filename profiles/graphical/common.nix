@@ -57,6 +57,7 @@ in
       #dzen2
       fantasque-sans-mono
       feh
+      flameshot
       #ffmpeg-full
       #gnome3.adwaita-icon-theme
       #gnome3.networkmanagerapplet
@@ -66,6 +67,7 @@ in
       kitty
       #librsvg
       #libsForQt5.qtstyleplugins
+      libnotify
       #manpages
       material-design-icons
       #papirus-icon-theme

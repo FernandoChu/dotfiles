@@ -18,6 +18,7 @@
     git-crypt
     gnupg
     less
+    starship
     wget
     neovim
   ];

@@ -209,8 +209,7 @@ bindsym $Mod+XF86AudioPrev exec mpc -h 127.0.0.1 repeat
 bindsym $Mod+XF86AudioStop exec mpc -h 127.0.0.1 sendmessage mpdas unlove
 bindsym $Mod+XF86AudioPlay exec mpc -h 127.0.0.1 sendmessage mpdas love
 
-bindsym Shift+Print exec escrotum -s -C
-bindsym Shift+$mod+Print exec escrotum -s
+bindsym Print exec flameshot gui
 bindsym Scroll_Lock exec bash /usr/bin/local/lockscript.sh
 
 bindsym $mod+space exec bash /etc/i3/language.sh

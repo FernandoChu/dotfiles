@@ -79,6 +79,11 @@ in
 
       in
       ''
+        export STARSHIP_CONFIG=${
+          pkgs.writeText "starship.toml"
+          (fileContents ./starship.toml)
+        }
+
         ${plugins}
 
         fpath+=( ${functions} ${localCompletions} )
