@@ -8,6 +8,10 @@
     "i3/background2.png".source = ./background2.png;
   };
 
+  environment.systemPackages = with pkgs; [
+    picom
+  ];
+
   services.xserver = {
     enable = true;
 

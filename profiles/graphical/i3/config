@@ -171,8 +171,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # Gaps:
 smart_borders on
-smart_gaps on
-gaps inner 20
+gaps inner 15
 hide_edge_borders both
 for_window [class="^.*"] border pixel 2
 
@@ -265,8 +264,9 @@ mode "$mode_gaps_outer" {
 exec --no-startup-id feh --bg-scale /etc/i3/background.png
 exec --no-startup-id mpd && mpdas
 exec --no-startup-id xrdb ~/.Xresources
-exec --no-startup-id sh /etc/polybar/launch.sh
 exec --no-startup-id numlockx on
+exec_always --no-startup-id sh /etc/polybar/launch.sh
+exec_always --no-startup-id picom
 
 # Assigns
 assign [class="Brave"] $ws2
