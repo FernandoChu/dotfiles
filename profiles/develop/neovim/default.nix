@@ -1,4 +1,8 @@
-{ pkgs, ... }: {
+{ lib, pkgs, ... }:
+let
+  inherit (lib) fileContents;
+in
+{
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -11,6 +15,7 @@
         set expandtab
         set background=dark
         let g:deoplete#enable_at_startup = 1
+        ${(fileContents ./vimtex.vim)}
         ${(fileContents ./coc.vim)}
       '';
       packages.myVimPackage = with pkgs.vimPlugins; {
@@ -21,7 +26,7 @@
           polyglot
           ale
           fugitive
-          deoplete-nvim
+          vimtex
           coc-vimtex
           coc-nvim
         ];
