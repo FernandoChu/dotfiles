@@ -1,10 +1,5 @@
 { pkgs, ... }: {
-  imports = [ ./vscodium ./zsh ];
-
-  environment.shellAliases = {
-    vi = "nvim";
-    vim = "nvim";
-  };
+  imports = [ ./vscodium ./zsh ./neovim ];
 
   #environment.sessionVariables = {
   #  PAGER = "less";
@@ -20,7 +15,6 @@
     less
     starship
     wget
-    neovim
   ];
 
   fonts =

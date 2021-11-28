@@ -77,7 +77,7 @@ in
         se = ifSudo "sudoedit";
 
         # top
-        top = "gotop";
+        # top = "gotop";
 
         # systemd
         ctl = "systemctl";

@@ -37,7 +37,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -no-config -no-lazy-grab -show drun -modi drun -theme /etc/rofi/launcher.rasi
 
 # change focus
 bindsym $mod+h focus left
