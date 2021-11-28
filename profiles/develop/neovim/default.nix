@@ -10,11 +10,7 @@ in
     defaultEditor = true;
     configure = {
       customRC = ''
-        set shiftwidth=2
-        set softtabstop=2
-        set expandtab
-        set background=dark
-        let g:deoplete#enable_at_startup = 1
+        ${(fileContents ./general.vim)}
         ${(fileContents ./vimtex.vim)}
         ${(fileContents ./coc.vim)}
       '';
