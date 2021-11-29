@@ -22,6 +22,7 @@ in
           polyglot
           ale
           fugitive
+          vim-sneak
           vimtex
           coc-vimtex
           coc-nvim

@@ -15,6 +15,7 @@
     less
     starship
     wget
+    (texlive.combine { inherit (texlive) scheme-full; })
   ];
 
   fonts =
