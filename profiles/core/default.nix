@@ -19,7 +19,6 @@ in
       git
       gptfdisk
       iputils
-      jq
       manix
       moreutils
       nix-index
