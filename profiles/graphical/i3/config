@@ -266,7 +266,7 @@ exec --no-startup-id mpd && mpdas
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id numlockx on
 exec_always --no-startup-id sh /etc/polybar/launch.sh
-exec_always --no-startup-id picom
+exec_always --no-startup-id picom --esperimental-backends
 
 # Assigns
 assign [class="Brave"] $ws2
