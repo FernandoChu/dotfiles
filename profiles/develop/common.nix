@@ -15,6 +15,7 @@
     less
     starship
     wget
+    nnn
     (texlive.combine { inherit (texlive) scheme-full; })
   ];
 

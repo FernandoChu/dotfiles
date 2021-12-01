@@ -7,23 +7,24 @@ channels: final: prev: {
     dhall
     discord
     element-desktop
-    manix
     rage
     nixpkgs-fmt
     qutebrowser
     signal-desktop
-    starship;
+    starship
+    deploy-rs
+    ;
 
 
-  haskellPackages = prev.haskellPackages.override {
-    overrides = hfinal: hprev:
-      let version = prev.lib.replaceChars [ "." ] [ "" ] prev.ghc.version;
-      in
-      {
-        # same for haskell packages, matching ghc versions
-        inherit (channels.latest.haskell.packages."ghc${version}")
-          haskell-language-server;
-      };
-  };
-
+  haskellPackages = prev.haskellPackages.override
+    (old: {
+      overrides = prev.lib.composeExtensions (old.overrides or (_: _: { })) (hfinal: hprev:
+        let version = prev.lib.replaceChars [ "." ] [ "" ] prev.ghc.version;
+        in
+        {
+          # same for haskell packages, matching ghc versions
+          inherit (channels.latest.haskell.packages."ghc${version}")
+            haskell-language-server;
+        });
+    });
 }

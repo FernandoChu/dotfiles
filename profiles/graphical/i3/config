@@ -262,11 +262,11 @@ mode "$mode_gaps_outer" {
 
 # Exec
 exec --no-startup-id feh --bg-scale /etc/i3/background.png
-exec --no-startup-id mpd && mpdas
+# exec --no-startup-id mpd && mpdas
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id numlockx on
 exec_always --no-startup-id sh /etc/polybar/launch.sh
-exec_always --no-startup-id picom --esperimental-backends
+exec_always --no-startup-id picom --experimental-backends
 
 # Assigns
 assign [class="Brave"] $ws2
