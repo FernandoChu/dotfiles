@@ -2,7 +2,7 @@
 let inherit (builtins) readFile;
 in
 {
-  imports = [ ../develop/common.nix ./i3 ./polybar ./rofi ./kitty ];
+  imports = [ ../develop/common.nix ./i3 ./polybar ./rofi ./kitty ./gaming ];
 
   hardware.opengl.enable = true;
   hardware.opengl.driSupport = true;
