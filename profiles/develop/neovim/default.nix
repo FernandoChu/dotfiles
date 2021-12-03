@@ -26,6 +26,7 @@ in
           vimtex
           coc-vimtex
           coc-nvim
+          vim-surround
         ];
         opt = [ ];
       };
