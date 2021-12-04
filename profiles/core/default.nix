@@ -31,7 +31,6 @@ in
       utillinux
       whois
       numlockx
-      neovim-nightly
     ];
 
     shellAliases =
