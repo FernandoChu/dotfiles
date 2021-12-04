@@ -26,10 +26,12 @@ in
       psmisc
       ripgrep
       tealdeer
+      unzip
       usbutils
       utillinux
       whois
       numlockx
+      neovim-nightly
     ];
 
     shellAliases =
