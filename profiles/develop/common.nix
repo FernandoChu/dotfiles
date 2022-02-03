@@ -16,6 +16,7 @@
     starship
     wget
     nnn
+    stack
     (texlive.combine { inherit (texlive) scheme-full; })
   ];
 

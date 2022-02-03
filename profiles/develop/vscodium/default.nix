@@ -3,6 +3,7 @@ let
   extensions = (with pkgs.vscode-extensions; [
     bbenoist.Nix
     vscodevim.vim
+    haskell.haskell
   ]);
   # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
   #   name ="Gruvbox Material";
