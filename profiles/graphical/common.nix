@@ -51,8 +51,6 @@ in
       #adapta-gtk-theme
       #cursor
       brave
-      discord
-      dolphin
       ferdi
       #dzen2
       fantasque-sans-mono
@@ -67,8 +65,8 @@ in
       #librsvg
       #libsForQt5.qtstyleplugins
       libnotify
-      #manpages
       material-design-icons
+      gnome.nautilus
       #papirus-icon-theme
       #pulsemixer
       #qt5.qtgraphicaleffects
@@ -76,6 +74,7 @@ in
       #stdmanpages
       #xsel
       rofi
+      transmission-gtk
       zathura
       dmenu
       polybar

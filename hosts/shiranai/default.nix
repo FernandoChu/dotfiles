@@ -44,6 +44,7 @@
   # Configure keymap in X11
   services.xserver.layout = "us";
   services.xserver.xkbOptions = "caps:swapescape";
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
