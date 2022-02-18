@@ -104,13 +104,14 @@
           hosts = {
             /* set host specific properties here */
             shiranai = { };
+            kobito = { };
           };
           importables = rec {
             profiles = digga.lib.rakeLeaves ./profiles // {
               users = digga.lib.rakeLeaves ./users;
             };
             suites = with profiles; rec {
-              base = [ core users.nan users.root ];
+              base = [ core users.nan users.root develop.common ];
               graphics = [ graphical.common ];
             };
           };
